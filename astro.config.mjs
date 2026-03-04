@@ -1,3 +1,4 @@
+import node from "@astrojs/node";
 import sitemap from "@astrojs/sitemap";
 import svelte from "@astrojs/svelte";
 import tailwind from "@astrojs/tailwind";
@@ -15,6 +16,7 @@ import remarkDirective from "remark-directive"; /* Handle directives */
 import remarkGithubAdmonitionsToDirectives from "remark-github-admonitions-to-directives";
 import remarkMath from "remark-math";
 import remarkSectionize from "remark-sectionize";
+import { fileURLToPath } from "node:url";
 import { expressiveCodeConfig } from "./src/config.ts";
 import { pluginLanguageBadge } from "./src/plugins/expressive-code/language-badge.ts";
 import { AdmonitionComponent } from "./src/plugins/rehype-component-admonition.mjs";
@@ -26,8 +28,12 @@ import { pluginCustomCopyButton } from "./src/plugins/expressive-code/custom-cop
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://fuwari.vercel.app/",
+	site: "https://yosem.top",
 	base: "/",
+	output: "server",
+	adapter: node({
+		mode: "standalone"
+	}),
 	trailingSlash: "always",
 	integrations: [
 		tailwind({
@@ -154,6 +160,17 @@ export default defineConfig({
 		],
 	},
 	vite: {
+		resolve: {
+			alias: {
+				"@": fileURLToPath(new URL("./src", import.meta.url)),
+				"@components": fileURLToPath(new URL("./src/components", import.meta.url)),
+				"@layouts": fileURLToPath(new URL("./src/layouts", import.meta.url)),
+				"@assets": fileURLToPath(new URL("./src/assets", import.meta.url)),
+				"@constants": fileURLToPath(new URL("./src/constants", import.meta.url)),
+				"@utils": fileURLToPath(new URL("./src/utils", import.meta.url)),
+				"@i18n": fileURLToPath(new URL("./src/i18n", import.meta.url)),
+			},
+		},
 		build: {
 			rollupOptions: {
 				onwarn(warning, warn) {

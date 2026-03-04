@@ -1,0 +1,78 @@
+
+> fuwari@0.0.1 build /var/www/html
+> astro build
+
+16:32:55 [@astrojs/node] Enabling sessions with filesystem storage
+16:32:56 [content] Syncing content
+16:32:56 [content] Synced content
+16:32:56 [types] Generated 475ms
+16:32:56 [build] output: "server"
+16:32:56 [build] mode: "server"
+16:32:56 [build] directory: /var/www/html/dist/
+16:32:56 [build] adapter: @astrojs/node
+16:32:56 [build] Collecting build info...
+16:32:56 [build] ✓ Completed in 846ms.
+16:32:56 [build] Building server entrypoints...
+Browserslist: browsers data (caniuse-lite) is 10 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+16:33:08 [vite] ✓ built in 12.26s
+16:33:08 [build] ✓ Completed in 12.34s.
+
+ building client (vite) 
+16:33:08 [vite] transforming...
+16:33:10 [vite] ✓ 162 modules transformed.
+16:33:10 [vite] rendering chunks...
+16:33:10 [vite] computing gzip size...
+16:33:10 [vite] dist/client/_astro/ec.g1fg5.js                                               0.94 kB
+16:33:10 [vite] dist/client/_astro/Layout.DSulWsr7.css                                       4.42 kB │ gzip:  1.43 kB
+16:33:10 [vite] dist/client/_astro/Layout.y4KPJ9hc.css                                      14.04 kB │ gzip:  2.61 kB
+16:33:10 [vite] dist/client/_astro/ec.4fsv9.css                                             19.69 kB │ gzip:  4.40 kB
+16:33:10 [vite] dist/client/_astro/url-utils.CoPbr7Wx.js                                     0.30 kB │ gzip:  0.21 kB
+16:33:10 [vite] dist/client/_astro/input.cX-djaPf.js                                         0.75 kB │ gzip:  0.43 kB
+16:33:10 [vite] dist/client/_astro/setting-utils.Cjv9PNp5.js                                 1.01 kB │ gzip:  0.49 kB
+16:33:10 [vite] dist/client/_astro/SwupScriptsPlugin.DeeT9ppa.js                             1.10 kB │ gzip:  0.62 kB
+16:33:10 [vite] dist/client/_astro/preload-helper.BlTxHScW.js                                1.11 kB │ gzip:  0.65 kB
+16:33:10 [vite] dist/client/_astro/client.svelte.BtEbdPyR.js                                 1.13 kB │ gzip:  0.63 kB
+16:33:10 [vite] dist/client/_astro/index.modern.D46RI4Wq.js                                  1.77 kB │ gzip:  0.91 kB
+16:33:10 [vite] dist/client/_astro/page.Z8IJTFqj.js                                          2.15 kB │ gzip:  1.01 kB
+16:33:10 [vite] dist/client/_astro/DisplaySettings.DO1ultQm.js                               2.16 kB │ gzip:  1.17 kB
+16:33:10 [vite] dist/client/_astro/SwupHeadPlugin.DvOZNxAa.js                                2.58 kB │ gzip:  1.28 kB
+16:33:10 [vite] dist/client/_astro/LightDarkSwitch.C4ULN93C.js                               3.33 kB │ gzip:  1.38 kB
+16:33:10 [vite] dist/client/_astro/ArchivePanel.BCllb_ib.js                                  3.61 kB │ gzip:  1.59 kB
+16:33:10 [vite] dist/client/_astro/each.DDW9_lxA.js                                          3.75 kB │ gzip:  1.88 kB
+16:33:10 [vite] dist/client/_astro/Search.Cjw60ClJ.js                                        4.66 kB │ gzip:  2.05 kB
+16:33:10 [vite] dist/client/_astro/SwupA11yPlugin.BIyElFLX.js                                5.25 kB │ gzip:  2.12 kB
+16:33:10 [vite] dist/client/_astro/SwupPreloadPlugin.BFr0xV-N.js                             6.06 kB │ gzip:  2.35 kB
+16:33:10 [vite] dist/client/_astro/zh_TW.CDCuNPt_.js                                         7.49 kB │ gzip:  2.59 kB
+16:33:10 [vite] dist/client/_astro/admin.astro_astro_type_script_index_0_lang.Bm2h63J4.js    7.64 kB │ gzip:  2.74 kB
+16:33:10 [vite] dist/client/_astro/SwupScrollPlugin.DTcbGiCQ.js                              8.00 kB │ gzip:  2.40 kB
+16:33:10 [vite] dist/client/_astro/translation.B7CU8jZf.js                                   9.60 kB │ gzip:  4.43 kB
+16:33:10 [vite] dist/client/_astro/Layout.astro_astro_type_script_index_0_lang.DAHrxWCB.js  16.69 kB │ gzip:  5.41 kB
+16:33:10 [vite] dist/client/_astro/Icon.D1kTP2rD.js                                         20.41 kB │ gzip:  8.23 kB
+16:33:10 [vite] dist/client/_astro/Swup.BWOMRtvc.js                                         21.62 kB │ gzip:  7.41 kB
+16:33:10 [vite] dist/client/_astro/render.BTYFdy85.js                                       27.51 kB │ gzip: 10.89 kB
+16:33:10 [vite] dist/client/_astro/Layout.astro_astro_type_script_index_1_lang.D3pHS_Lp.js  31.78 kB │ gzip: 15.33 kB
+16:33:10 [vite] dist/client/_astro/photoswipe.esm.CKV1Bsxh.js                               60.41 kB │ gzip: 17.48 kB
+16:33:10 [vite] ✓ built in 2.13s
+
+ prerendering static routes 
+16:33:11 ▶ src/pages/posts/[...slug].astro
+16:33:11   ├─ /posts/markdown-extended/index.html (+91ms) 
+16:33:11   ├─ /posts/expressive-code/index.html (+13ms) 
+16:33:11   ├─ /posts/guide/index.html (+11ms) 
+16:33:11   ├─ /posts/markdown/index.html (+13ms) 
+16:33:11   └─ /posts/video/index.html (+8ms) 
+16:33:11 ▶ src/pages/[...page].astro
+16:33:11   └─ /index.html (+10ms) 
+16:33:11 ✓ Completed in 859ms.
+
+ generating optimized images 
+16:33:11   ▶ /_astro/demo-avatar.CxcI0ivM_1nbuVe.webp (reused cache entry) (+3ms) (1/2)
+16:33:11   ▶ /_astro/cover.CgGywNHJ_9MQNr.webp (reused cache entry) (+4ms) (2/2)
+16:33:11 ✓ Completed in 5ms.
+
+16:33:11 [build] Rearranging server assets...
+16:33:11 [@astrojs/sitemap] `sitemap-index.xml` created at `dist/client`
+16:33:11 [build] Server built in 16.34s
+16:33:11 [build] Complete!
